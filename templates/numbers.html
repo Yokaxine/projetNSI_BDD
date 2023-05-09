@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nombres associés</title>
+</head>
+<body>
+	<h1>Nombres associés à votre compte</h1>
+	<ul>
+	{% for number in numbers %}
+		{% if number['associated'] %}
+			<li>{{ number['number'] }}</li>
+		{% else %}
+			<li><span style="color: red">🔒</span></li>
+		{% endif %}
+	{% endfor %}
+	</ul>
+</body>
+</html>
