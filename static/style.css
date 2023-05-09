@@ -1,0 +1,203 @@
+/* Style général */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #222;
+	
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* Style pour le logo à gauche */
+.logo a {
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Style pour les liens de navigation à droite */
+.nav-links ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.nav-links li {
+	margin-left: 20px;
+}
+
+.nav-links li a {
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Style pour la section de compte qui se déroule */
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 160px;
+	background-color: #f9f9f9;
+	padding: 10px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+/* Contenu principal */
+main {
+	position: relative;
+	margin-left: 200px; /* Laisser de la place pour la barre latérale */
+	padding-bottom: 100px; /* Laisser de la place pour le footer */
+  }
+  
+.aside {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	background-color: #f1f1f1;
+	overflow-x: hidden;
+	padding-top: 20px;
+  }
+
+section {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+section h2 {
+	margin-top: 0;
+}
+
+section p {
+	margin: 10px 0;
+}
+
+section a {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+section a:hover {
+	background-color: #555;
+}
+
+/* Pied de page */
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+.bi-person-fill {
+	color: white;
+}
+
+/* CARTE */
+/* Appliquer les styles aux images dans la classe "carte" */
+.carte {
+	display: inline-block;
+	margin: 0.5%;
+	text-align: center;
+	vertical-align: top;
+	width: 23%;
+    margin-bottom: 2%;
+    height: 200px;
+}
+
+/* Définir une largeur maximale pour la section des cartes */
+/* Définir une largeur maximale pour la section des cartes */
+.cartes {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	margin-bottom: 500px;
+}
+
+/* Définir la taille et la marge des cartes */
+/* Définir une largeur maximale pour la section des cartes */
+.cartes {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px; /* ajouter une marge inférieure */
+}
+
+/* Définir la taille et la marge des cartes */
+/* Définir une largeur maximale pour la section des cartes */
+.cartes {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 500px; /* ajouter une marge inférieure */
+}
+
+/* Définir la taille et la marge des cartes */
+.carte {
+    width: 25px;
+    margin: 2%;
+    height : 390px;
+	margin-right: 100px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.carte img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+
+/* Définir les colonnes */
+@media screen{
+	.cartes {
+		display: block;
+	}
+	.carte {
+		width: 23%;
+		margin: 1%;
+		float: left;
+	}
+}
+
+  
